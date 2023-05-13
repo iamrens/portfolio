@@ -1,5 +1,4 @@
 import { Cursor, useTypewriter } from 'react-simple-typewriter'
-import profile from '../assets/profile.jpeg'
 import { useContext } from 'react';
 import { ThemeContext } from '../context/ThemeContext';
 import Links from '../components/Links';
@@ -34,7 +33,7 @@ const Home = () => {
             initial={{borderRadius: '100px', opacity: 0}}
             animate={{borderRadius: '30px', opacity: 1}}
             transition={{duration: 0.5, ease: 'linear'}} 
-            src={profile} 
+            src={import.meta.env.VITE_PROFILE} 
             alt='profile' 
             className='object-cover w-[250px] h-[300px] sm:w-auto sm:h-[100%] rounded-[30px] shadow-img dark:shadow-imgDark z-10'
           />

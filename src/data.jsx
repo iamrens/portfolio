@@ -166,7 +166,7 @@ export const experienceDetails = [
     },
     {
         id: 3,
-        title: 'Tertiary - Engineer',
+        title: 'Engineering Degree',
         where: 'Columban College - Olongapo',
         when: '2012 - 2017',
         icon: <FaGraduationCap />,

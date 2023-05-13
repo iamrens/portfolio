@@ -29,7 +29,7 @@ const ExpCard = () => {
                 }}
                 icon={icon}
             >
-                <h1 className="text-titleLight dark:text-titleDark font-poppins font-bold text-[24px]">
+                <h1 className="text-titleLight dark:text-titleDark font-poppins font-bold text-[20px] sm:text-[24px]">
                     {title}
                 </h1>
                 <h1 className="text-gray-500 dark:text-neutral-500 font-open text-[16px] font-semibold">

@@ -3,6 +3,7 @@ import { useContext, useState } from "react";
 import { ThemeContext } from "../context/ThemeContext";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaGithub, FaFacebookF, FaLinkedin, FaArrowDown, FaInstagram } from "react-icons/fa";
+import CV from "../assets/CV.pdf"
 
 const Links = () => {
     const { bgColor } = useContext(ThemeContext);
@@ -27,6 +28,7 @@ const Links = () => {
     return (
         <div className="pt-7 sm:pt-[40px] flex flex-row justify-between items-center">
 
+            <a href={CV} download>
             <motion.div
                 variants={resumeVar}
                 initial="initial"
@@ -53,6 +55,7 @@ const Links = () => {
                 )}
                 </AnimatePresence>
             </motion.div>
+            </a>
 
             {/* Social Icons */}
             <motion.div
@@ -62,16 +65,16 @@ const Links = () => {
                 className="xs:pl-2 sm:pl-5 flex flex-row items-center justify-center text-titleLight dark:text-titleDark space-x-1 md:space-x-2"
             >
                 <Link to={import.meta.env.VITE_GITHUB} target="_blank">
-                    <FaGithub size={35} className="home-icon" />
+                    <FaGithub size={40} className="home-icon" />
                 </Link>
                 <Link to={import.meta.env.VITE_FB} target="_blank">
-                    <FaFacebookF size={35} className="home-icon" />
+                    <FaFacebookF size={40} className="home-icon" />
                 </Link>
                 <Link to={import.meta.env.VITE_LINKEDIN} target="_blank">
-                    <FaLinkedin size={35} className="home-icon" />
+                    <FaLinkedin size={40} className="home-icon" />
                 </Link>
                 <Link to={import.meta.env.VITE_IG} target="_blank">
-                    <FaInstagram size={35} className="home-icon" />
+                    <FaInstagram size={40} className="home-icon" />
                 </Link>
             </motion.div>
 

@@ -28,17 +28,19 @@ const Skill = ({title, url, level}) => {
         }
     }
 
+
   return (
     <div 
         onMouseEnter={() => setShow(true)}
         onMouseLeave={() => setShow(false)}
-        className="group relative flex flex-col cursor-pointer h-16 w-16 sm:h-20 sm:w-20"
+        onTouchStart={() => setShow(!show)}
+        className="group relative flex flex-col cursor-pointer h-16 w-16 sm:h-20 sm:w-20 lg:h-24 lg:w-24"
     >
         <motion.img
             src={url}
             animate={{ scaleX: show ? -1 : 1 }}
             transition={{ duration: 0.5, ease: 'easeOut' }}
-            className="rounded-full border border-gray-500 object-cover h-16 w-16 sm:h-20 sm:w-20"    
+            className="rounded-full border border-gray-500 object-cover h-16 w-16 sm:h-20 sm:w-20 lg:h-24 lg:w-24"    
         />
         
         <AnimatePresence>
@@ -58,7 +60,7 @@ const Skill = ({title, url, level}) => {
                 initial="initial"
                 animate="animate"
                 exit={{ opacity: 0 }}
-                className="absolute h-16 w-16 sm:h-20 sm:w-20 rounded-full z-10"
+                className="absolute h-16 w-16 sm:h-20 sm:w-20 lg:h-24 lg:w-24 rounded-full z-10"
             >
                 <div className="flex items-center justify-center h-full w-full">
                     <CircularProgressbar 

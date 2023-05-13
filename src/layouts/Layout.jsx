@@ -5,6 +5,7 @@ import { HiUser, HiFolderOpen, HiHome, HiEnvelope } from 'react-icons/hi2'
 import { motion, AnimatePresence } from 'framer-motion';
 import Theme from './Theme';
 import { useMediaQuery } from 'react-responsive';
+import { FaArrowDown, FaArrowUp } from "react-icons/fa"
 
 const Layout = () => {
     const location = useLocation();
@@ -53,7 +54,7 @@ const Layout = () => {
                     initial="initial"
                     animate="animate"
                     className={`${isMobile ? 'fixed bottom-4 left-1/2 transform -translate-x-1/2 flex items-center justify-center space-x-4 p-2 bg-neutral-200 dark:bg-neutral-800 rounded-xl z-50' : 'fixed top-1/2 right-4 transform -translate-y-1/2 flex flex-col space-y-4 bg-gray-200 dark:bg-neutral-800 p-2 rounded-xl z-50'}`}
-                >
+                >   
                     <NavLink to="/" onClick={() => console.log("navigate to home")}>
                         <motion.div
                             variants={childVar}
@@ -152,6 +153,8 @@ const Layout = () => {
                 </motion.div>
 
                 <Theme />
+
+
 
             </div>
 
