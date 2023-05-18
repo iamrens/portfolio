@@ -24,4 +24,10 @@ body {
     .home-icon {
         @apply cursor-pointer rounded-full p-[6px] hover:bg-gray-300 dark:hover:bg-neutral-700;
     }
+    .about-nav {
+        @apply cursor-pointer animate-bounce p-1 rounded-full bg-gray-300 dark:bg-neutral-800 text-titleLight dark:text-titleDark hover:text-white;
+    }
+    .contact-input {
+        @apply py-3 px-5 font-open bg-gray-200 dark:bg-neutral-700 border-none;
+    }
 }

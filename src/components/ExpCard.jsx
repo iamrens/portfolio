@@ -3,7 +3,6 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import { FaGraduationCap } from "react-icons/fa";
 import { useContext } from "react";
 import { ThemeContext } from "../context/ThemeContext";
 import { experienceDetails } from "../data";
@@ -18,10 +17,10 @@ const ExpCard = () => {
             <VerticalTimelineElement
                 key={index}
                 contentStyle={{
-                    background: theme === "dark" ? "#404040" : "#e5e7eb",
+                    background: theme === "dark" ? "#404040" : "#d1d5db",
                     // color: theme === "dark" ? "#E0E0E0" : "#666666",
                 }}
-                contentArrowStyle={{ borderRight: `10px solid ${theme === "dark" ? "#262626" : "#e5e7eb"}` }}
+                contentArrowStyle={{ borderRight: `10px solid ${theme === "dark" ? "#262626" : "#d1d5db"}` }}
                 date={when}
                 iconStyle={{ 
                     background: themeColor,

@@ -4,31 +4,17 @@ import { motion, AnimatePresence } from "framer-motion"
 import { FaCog } from "react-icons/fa"
 import { ImDroplet } from "react-icons/im"
 import { HiSun, HiMoon } from "react-icons/hi2"
+import { Var } from "../utils/framer"
 
 const Theme = () => {
     const { setThemeColor, theme, setTheme } = useContext(ThemeContext);
     const [showSwitcher, setShowSwitcher] = useState(false);
     const [menu, setMenu] = useState(true);
 
-    const themeVar = {
-        initial: {
-            opacity: 0,
-            x: -20,
-        },
-        animate: {
-            opacity: 1,
-            x: 0, 
-            transition: {
-                duration: 0.3, 
-                ease: 'easeInOut'
-            }
-        }
-    }
-
     return (
         <>
             
-            <div className='fixed top-[10%] left-0 z-50 flex flex-col'>
+            <div className='fixed top-[10%] left-0 z-50 flex flex-col opacity-70 hover:opacity-100 sm:opacity-100'>
                 <AnimatePresence>
                 {menu &&
                 <motion.div
@@ -36,7 +22,7 @@ const Theme = () => {
                         setShowSwitcher(true);
                         setMenu(false);
                     }}
-                    variants={themeVar}
+                    variants={Var.child(0.3, 'easeInOut', -20)}
                     initial="initial"
                     animate="animate"
                     whileHover={{scale: 1.1}}
@@ -54,7 +40,7 @@ const Theme = () => {
                 { showSwitcher &&
                 <motion.div 
                     className='absolute w-[210px] bg-slate-200 dark:bg-neutral-700 p-3 rounded-lg top-0'
-                    variants={themeVar}
+                    variants={Var.child(0.3, 'easeInOut', -20)}
                     initial="initial"
                     animate="animate"
                     exit={{opacity: 0, x: -20}}
@@ -115,7 +101,7 @@ const Theme = () => {
                 {menu && (
                 <motion.div 
                     onClick={() => theme == "dark"? setTheme('light'): setTheme("dark")}
-                    variants={themeVar}
+                    variants={Var.child(0.3, 'easeInOut', -20)}
                     initial="initial"
                     animate="animate"
                     whileHover={{scale: 1.1}}

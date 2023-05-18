@@ -135,6 +135,12 @@ export const skillDetails = [
         url: 'https://res.cloudinary.com/dinwkz2rq/image/upload/v1683686510/portfolio/bootstrap_uyoxpq.png',
         level: '60'
     },
+    {
+        id: 14,
+        title: 'Vite',
+        url: 'https://res.cloudinary.com/dinwkz2rq/image/upload/v1684139432/portfolio/vite_zkr5qk.png',
+        level: '75'
+    },
 ]
 
 export const experienceDetails = [
@@ -261,6 +267,90 @@ export const experienceDetails = [
             {
                 id: 2,
                 title: "Currently enrolled in one of Udemy courses titled 'The Complete 2023 Web Development Bootcamp' by Dr. Angela Yu.",
+            },
+        ]
+    },
+]
+
+export const myProjects = [
+    {
+        id: 3,
+        title: 'Social Media App',
+        img: 'https://res.cloudinary.com/dinwkz2rq/image/upload/v1684135083/portfolio/Friendzone_mllr8u.png',
+        imgName: 'friendzone',
+        github: 'https://github.com/iamrens/MERN-social-media-app',
+        link: 'https://friendzone-mern.netlify.app/',
+        youtube: '',
+        description: 'A social media web application that is designed to connect, share, and interact with others. You can easily create, update, delete and navigate thru out the page. Add your friends and comment on there posts to build meaningful interactions with one another.',
+        tags: [
+            {
+                id: 1,
+                title: 'MERN',
+                color: 'text-blue-500',
+            },
+            {
+                id: 2,
+                title: 'redux',
+                color: 'text-green-500',
+            },
+            {
+                id: 3,
+                title: 'mui',
+                color: 'text-pink-500',
+            },
+            {
+                id: 4,
+                title: 'cloudinary',
+                color: 'text-yellow-500',
+            },
+        ]
+    },
+    {
+        id: 2,
+        title: 'Fitness List',
+        img: 'https://res.cloudinary.com/dinwkz2rq/image/upload/v1684135086/portfolio/FitnessClub_j1lclj.png',
+        imgName: 'fitness',
+        github: 'https://github.com/iamrens/MERN-workout-app',
+        link: 'https://fitness-club-mern.netlify.app/login',
+        youtube: '',
+        description: 'Web application designed to efficiently manage your fitness tasks, prioritize your workouts and conquer your busy schedule. You can easily manage your workouts and track your progress with the added benefit of time stamps for each workout.',
+        tags: [
+            {
+                id: 1,
+                title: 'MERN',
+                color: 'text-blue-500',
+            },
+            {
+                id: 2,
+                title: 'mui',
+                color: 'text-pink-500',
+            },
+        ]
+    },
+    {
+        id: 1,
+        title: 'Todo List',
+        img: 'https://res.cloudinary.com/dinwkz2rq/image/upload/v1684135083/portfolio/TodoList_l6ndac.png',
+        imgName: 'todo',
+        github: 'https://github.com/iamrens/MERN-workout-app',
+        link: 'https://todo-app-firebase-96b12.web.app/',
+        youtube: '',
+        description: 'Web application that is designed to help you manage your tasks, prioritize your goals, and stay on top of your busy life. You can effortlessly create, update, and delete tasks, while easily searching and filtering for ongoing and completed tasks.',
+        tags: [
+            {
+                id: 1,
+                title: 'react',
+                color: 'text-blue-500',
+            },
+            {
+                id: 2,
+                title: 'firebase',
+                color: 'text-green-500',
+            },
+            {
+                id: 3,
+                title: 'mui',
+                color: 'text-pink-500',
             },
         ]
     },

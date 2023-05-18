@@ -3,19 +3,11 @@ import { useState, useContext } from "react"
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import 'react-circular-progressbar/dist/styles.css';
 import { ThemeContext } from "../context/ThemeContext";
+import { Var } from "../utils/framer";
 
 const Skill = ({title, url, level}) => {
     const [ show, setShow ] = useState(false);
     const { themeColor } = useContext(ThemeContext);
-
-    const divVar = {
-        initial: { opacity: 0, scaleX: -1 },
-        animate: { 
-            opacity: 1, 
-            scaleX: 1,
-            transition: {duration: 0.5, ease: 'easeOut'}
-        }
-    }
 
     const h3Var = {
         initial: { opacity: 0, scale: 0.5, x: '-50%', y: 20 },
@@ -33,14 +25,14 @@ const Skill = ({title, url, level}) => {
     <div 
         onMouseEnter={() => setShow(true)}
         onMouseLeave={() => setShow(false)}
-        onTouchStart={() => setShow(!show)}
-        className="group relative flex flex-col cursor-pointer h-16 w-16 sm:h-20 sm:w-20 lg:h-24 lg:w-24"
+        // onTouchStart={() => setShow(!show)}
+        className="group relative flex flex-col cursor-pointer h-16 w-16 sm:h-20 sm:w-20"
     >
         <motion.img
             src={url}
             animate={{ scaleX: show ? -1 : 1 }}
             transition={{ duration: 0.5, ease: 'easeOut' }}
-            className="rounded-full border border-gray-500 object-cover h-16 w-16 sm:h-20 sm:w-20 lg:h-24 lg:w-24"    
+            className="rounded-full border border-gray-500 object-cover h-16 w-16 sm:h-20 sm:w-20"    
         />
         
         <AnimatePresence>
@@ -56,11 +48,11 @@ const Skill = ({title, url, level}) => {
                 {title}
             </motion.h3>
             <motion.div
-                variants={divVar}
+                variants={Var.scale(0.5, 'easeOut', -1)}
                 initial="initial"
                 animate="animate"
                 exit={{ opacity: 0 }}
-                className="absolute h-16 w-16 sm:h-20 sm:w-20 lg:h-24 lg:w-24 rounded-full z-10"
+                className="absolute h-16 w-16 sm:h-20 sm:w-20 rounded-full z-10"
             >
                 <div className="flex items-center justify-center h-full w-full">
                     <CircularProgressbar 
@@ -81,12 +73,6 @@ const Skill = ({title, url, level}) => {
         </>
         }
         </AnimatePresence>
-
-        {/* <div className="absolute opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-white w-20 h-20 rounded-full z-0">
-            <div className="flex items-center justify-center h-full">
-                <p className="text-2xl font-open font-bold opacity-100 text-black">90%</p>
-            </div>
-        </div> */}
 
     </div>
   )
