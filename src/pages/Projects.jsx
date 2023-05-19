@@ -54,11 +54,11 @@ const Projects = () => {
             }}
             className={`w-auto max-w-[360px] sm:w-[360px] cursor-pointer p-3 rounded-2xl  ${bgColor} flex flex-col`}
           >
-            <div className="relative w-full h-[230px]">
+            <div className="relative w-full h-[230px] overflow-hidden rounded-2xl">
               <img 
                 src={project.img}
                 alt={project.imgName}
-                className="w-full h-full object-cover rounded-2xl"
+                className="w-full h-full object-cover rounded-2xl hover:scale-110 transition duration-300 ease-in-out"
               />
               <div className="absolute right-0 top-0 flex flex-col space-y-1 justify-end p-2">
                 <Link to={project.github} target="_blank">

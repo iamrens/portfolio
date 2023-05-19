@@ -81,7 +81,7 @@ const Home = () => {
             animate="animate"
             className='font-open text-titleLight dark:text-titleDark pt-5 sm:pt-[50px] leading-7 text-justify sm:text-left'
           >
-            I&apos;m a licensed Electronics Engineer and an aspiring full-stack web developer with a passion for creating innovative web applications. My portfolio showcases my expertise in the MERN stack, with projects that demonstrate my ability to turn ideas into functional and engaging products.
+            I&apos;m a licensed Electronics Engineer and a freelance full-stack web developer with a passion for creating innovative web applications. My portfolio showcases my expertise in the MERN stack, with projects that demonstrate my ability to turn ideas into functional and engaging products.
           </motion.p>
 
           {/* Resume and Social Links */}

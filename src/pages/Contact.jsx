@@ -11,6 +11,7 @@ const Contact = () => {
   const {
     register,
     trigger,
+    reset,
     formState: { errors, isSubmitting },
   } = useForm();
 
@@ -18,6 +19,8 @@ const Contact = () => {
     const isValid = await trigger();
     if (!isValid) {
       e.preventDefault();
+    } else {
+      reset();
     }
   };
 

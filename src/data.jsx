@@ -141,6 +141,12 @@ export const skillDetails = [
         url: 'https://res.cloudinary.com/dinwkz2rq/image/upload/v1684139432/portfolio/vite_zkr5qk.png',
         level: '75'
     },
+    {
+        id: 15,
+        title: 'Framer',
+        url: 'https://res.cloudinary.com/dinwkz2rq/image/upload/v1684478467/portfolio/framer_c2lwqk.webp',
+        level: '80'
+    },
 ]
 
 export const experienceDetails = [
@@ -241,7 +247,7 @@ export const experienceDetails = [
             },
             {
                 id: 3,
-                title: 'Handles customer claim facilitation and coordination as well as problem solving (using root-cause-analysis and why-why analysis), evaluation and solution.',
+                title: 'Handles customer claim facilitation and coordination. It includes problem solving with Six Sigma application and root-cause analysis using Why-why Analysis, Fault Tree Analysis and Fishbone Diagram, and implementing Corrective Action and Preventive Action.',
             },
             {
                 id: 4,
