@@ -241,7 +241,7 @@ export const experienceDetails = [
             },
             {
                 id: 3,
-                title: 'Handles customer claim facilitation and coordination as well as problem solving and evaluation.',
+                title: 'Handles customer claim facilitation and coordination as well as problem solving (using root-cause-analysis and why-why analysis), evaluation and solution.',
             },
             {
                 id: 4,
