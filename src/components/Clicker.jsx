@@ -29,7 +29,7 @@ const Clicker = ({icon, title}) => {
           {item && (
             <motion.div
               variants={Var.child(0.2, 'easeOut', 100)}
-              exit={{ x: 150 }}
+              exit={{ x: 200 }}
               className={`absolute rounded-full h-full w-full ${bgColor}`}
             ></motion.div>
           )}
