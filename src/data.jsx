@@ -286,7 +286,7 @@ export const myProjects = [
         imgName: 'friendzone',
         github: 'https://github.com/iamrens/MERN-social-media-app',
         link: 'https://friendzone-mern.netlify.app/',
-        youtube: '',
+        youtube: 'https://screenrec.com/share/5jL9gPaHrY',
         description: 'A social media web application that is designed to connect, share, and interact with others. You can easily create, update, delete and navigate thru out the page. Add your friends and comment on there posts to build meaningful interactions with one another.',
         tags: [
             {
@@ -318,7 +318,7 @@ export const myProjects = [
         imgName: 'fitness',
         github: 'https://github.com/iamrens/MERN-workout-app',
         link: 'https://fitness-club-mern.netlify.app/login',
-        youtube: '',
+        youtube: 'https://screenrec.com/share/N8L3Ozsvnw',
         description: 'Web application designed to efficiently manage your fitness tasks, prioritize your workouts and conquer your busy schedule. You can easily manage your workouts and track your progress with the added benefit of time stamps for each workout.',
         tags: [
             {
@@ -340,7 +340,7 @@ export const myProjects = [
         imgName: 'todo',
         github: 'https://github.com/iamrens/MERN-workout-app',
         link: 'https://todo-app-firebase-96b12.web.app/',
-        youtube: '',
+        youtube: 'https://screenrec.com/share/XhPUZTWrmu',
         description: 'Web application that is designed to help you manage your tasks, prioritize your goals, and stay on top of your busy life. You can effortlessly create, update, and delete tasks, while easily searching and filtering for ongoing and completed tasks.',
         tags: [
             {

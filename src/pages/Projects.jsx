@@ -67,9 +67,9 @@ const Projects = () => {
                 <Link to={project.link} target="_blank">
                   <TbWorld className={`w-10 h-10 p-1 rounded-full bg-gray-300 dark:bg-neutral-700 hover:bg-white dark:hover:bg-white text-titleLight dark:text-titleDark ${hoverTextColor}`} />
                 </Link>
-                {/* <Link to={project.youtube} target="_blank">
+                <Link to={project.youtube} target="_blank">
                   <FaYoutube className={`w-10 h-10 p-1 rounded-full bg-gray-300 dark:bg-neutral-700 hover:bg-white dark:hover:bg-white text-titleLight dark:text-titleDark ${hoverTextColor}`} />
-                </Link> */}
+                </Link>
               </div>
             </div>
 
