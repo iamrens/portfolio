@@ -261,17 +261,25 @@ export const experienceDetails = [
     },
     {
         id: 6,
-        title: 'Web Development',
-        where: 'Online',
+        title: 'Full Stack Web Developer',
+        where: 'Freelance',
         when: 'December 2022 - present',
         icon: <TfiPencilAlt />,
         description: [
             {
                 id: 1,
-                title: 'Studying web development starting from HTML, CSS, Javascript, React, Typescript, Next JS, Node JS, MongoDB and various CSS library such as Material UI, Tailwind and Bootstrap.',
+                title: 'Design and build web applications in both Front-end and Back-end development.',
             },
             {
                 id: 2,
+                title: 'Front-end: React JS, Next JS, TypeScript, Vite, Redux, Tailwind CSS, Material UI, Bootstrap, Framer Motion',
+            },
+            {
+                id: 3,
+                title: 'Back-end: Node JS, Express JS, MongoDB, Moongose, Firebase',
+            },
+            {
+                id: 4,
                 title: "Currently enrolled in one of Udemy courses titled 'The Complete 2023 Web Development Bootcamp' by Dr. Angela Yu.",
             },
         ]
