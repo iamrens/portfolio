@@ -52,7 +52,7 @@ const Projects = () => {
               scale: 1,
               speed: 450,
             }}
-            className={`w-auto max-w-[360px] sm:w-[360px] cursor-pointer p-3 rounded-2xl  ${bgColor} flex flex-col`}
+            className={`w-auto max-w-[360px] sm:w-[360px] cursor-pointer p-3 rounded-2xl  ${bgColor} flex flex-col h-[100%]`}
           >
             <div className="relative w-full h-[230px] overflow-hidden rounded-2xl">
               <img 
@@ -61,15 +61,18 @@ const Projects = () => {
                 className="w-full h-full object-cover rounded-2xl hover:scale-110 transition duration-300 ease-in-out"
               />
               <div className="absolute right-0 top-0 flex flex-col space-y-1 justify-end p-2">
-                <Link to={project.github} target="_blank">
+                {project.github &&
+                  <Link to={project.github} target="_blank">
                   <FaGithub className={`w-10 h-10 p-1 rounded-full bg-gray-300 dark:bg-neutral-700 hover:bg-white dark:hover:bg-white text-titleLight dark:text-titleDark ${hoverTextColor}`} />
-                </Link>
-                <Link to={project.link} target="_blank">
+                </Link>}
+                {project.link &&
+                  <Link to={project.link} target="_blank">
                   <TbWorld className={`w-10 h-10 p-1 rounded-full bg-gray-300 dark:bg-neutral-700 hover:bg-white dark:hover:bg-white text-titleLight dark:text-titleDark ${hoverTextColor}`} />
-                </Link>
-                <Link to={project.youtube} target="_blank">
+                </Link>}
+                {project.youtube &&
+                  <Link to={project.youtube} target="_blank">
                   <FaYoutube className={`w-10 h-10 p-1 rounded-full bg-gray-300 dark:bg-neutral-700 hover:bg-white dark:hover:bg-white text-titleLight dark:text-titleDark ${hoverTextColor}`} />
-                </Link>
+                </Link>}
               </div>
             </div>
 

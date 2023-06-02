@@ -288,7 +288,7 @@ export const experienceDetails = [
 
 export const myProjects = [
     {
-        id: 3,
+        id: 6,
         title: 'Social Media App',
         img: 'https://res.cloudinary.com/dinwkz2rq/image/upload/v1684135083/portfolio/Friendzone_mllr8u.png',
         imgName: 'friendzone',
@@ -320,7 +320,7 @@ export const myProjects = [
         ]
     },
     {
-        id: 2,
+        id: 5,
         title: 'Fitness List',
         img: 'https://res.cloudinary.com/dinwkz2rq/image/upload/v1684135086/portfolio/FitnessClub_j1lclj.png',
         imgName: 'fitness',
@@ -342,7 +342,7 @@ export const myProjects = [
         ]
     },
     {
-        id: 1,
+        id: 4,
         title: 'Todo List',
         img: 'https://res.cloudinary.com/dinwkz2rq/image/upload/v1684135083/portfolio/TodoList_l6ndac.png',
         imgName: 'todo',
@@ -364,6 +364,97 @@ export const myProjects = [
             {
                 id: 3,
                 title: 'mui',
+                color: 'text-pink-500',
+            },
+        ]
+    },
+    {
+        id: 3,
+        title: 'Weather App',
+        img: 'https://res.cloudinary.com/dinwkz2rq/image/upload/v1685688775/portfolio/Weather_App_gkt1vc.png',
+        imgName: 'weather app',
+        github: 'https://github.com/iamrens/weather-app',
+        link: 'https://weather-app-rens.netlify.app/',
+        youtube: '',
+        description: 'A web application for checking the weather updates in a certain place. This project was made using basic HTML, CSS and Javascript. It also uses API coordination and integration. I made it while learning javascript.',
+        tags: [
+            {
+                id: 1,
+                title: 'html',
+                color: 'text-blue-500',
+            },
+            {
+                id: 2,
+                title: 'css',
+                color: 'text-green-500',
+            },
+            {
+                id: 3,
+                title: 'javascript',
+                color: 'text-pink-500',
+            },
+            {
+                id: 4,
+                title: 'restAPI',
+                color: 'text-yellow-500',
+            },
+        ]
+    },
+    {
+        id: 2,
+        title: 'Realtime Chat',
+        img: 'https://res.cloudinary.com/dinwkz2rq/image/upload/v1685689005/portfolio/Realtime_Chat_e5zyid.png',
+        imgName: 'realtime chat',
+        github: 'https://github.com/iamrens/realtime-chatroom',
+        link: 'https://project-realtime-chatroom.netlify.app/',
+        youtube: '',
+        description: 'A web application for interactions with others using messages in realtime. This project was made using basic HTML, CSS and Javascript. It also uses firebase as a database. I made it while learning javascript.',
+        tags: [
+            {
+                id: 1,
+                title: 'html',
+                color: 'text-blue-500',
+            },
+            {
+                id: 2,
+                title: 'css',
+                color: 'text-green-500',
+            },
+            {
+                id: 3,
+                title: 'javascript',
+                color: 'text-pink-500',
+            },
+            {
+                id: 4,
+                title: 'firebase',
+                color: 'text-yellow-500',
+            },
+        ]
+    },
+    {
+        id: 1,
+        title: 'Interactive Quiz App',
+        img: 'https://res.cloudinary.com/dinwkz2rq/image/upload/v1685690033/portfolio/Quiz_App_w8gz00.png',
+        imgName: 'interactive quiz',
+        github: 'https://github.com/iamrens/interactive-quiz-app',
+        link: 'https://interactive-quiz-app.netlify.app/',
+        youtube: '',
+        description: 'A web application made to test yourself for electronics communication system subject. This project was made using basic HTML, CSS and Javascript. I made it while learning javascript.',
+        tags: [
+            {
+                id: 1,
+                title: 'html',
+                color: 'text-blue-500',
+            },
+            {
+                id: 2,
+                title: 'css',
+                color: 'text-green-500',
+            },
+            {
+                id: 3,
+                title: 'javascript',
                 color: 'text-pink-500',
             },
         ]
