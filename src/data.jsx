@@ -317,6 +317,16 @@ export const myProjects = [
                 title: 'cloudinary',
                 color: 'text-yellow-500',
             },
+            {
+                id: 5,
+                title: 'jwt',
+                color: 'text-red-500',
+            },
+            {
+                id: 6,
+                title: 'yup',
+                color: 'text-purple-500',
+            },
         ]
     },
     {
@@ -337,7 +347,17 @@ export const myProjects = [
             {
                 id: 2,
                 title: 'mui',
+                color: 'text-green-500',
+            },
+            {
+                id: 3,
+                title: 'jwt',
                 color: 'text-pink-500',
+            },
+            {
+                id: 4,
+                title: 'react-hook-form',
+                color: 'text-yellow-500',
             },
         ]
     },
@@ -385,12 +405,12 @@ export const myProjects = [
             },
             {
                 id: 2,
-                title: 'css',
+                title: 'bootstrap',
                 color: 'text-green-500',
             },
             {
                 id: 3,
-                title: 'javascript',
+                title: 'js',
                 color: 'text-pink-500',
             },
             {
@@ -417,12 +437,12 @@ export const myProjects = [
             },
             {
                 id: 2,
-                title: 'css',
+                title: 'bootstrap',
                 color: 'text-green-500',
             },
             {
                 id: 3,
-                title: 'javascript',
+                title: 'js',
                 color: 'text-pink-500',
             },
             {
@@ -449,12 +469,12 @@ export const myProjects = [
             },
             {
                 id: 2,
-                title: 'css',
+                title: 'bootstrap',
                 color: 'text-green-500',
             },
             {
                 id: 3,
-                title: 'javascript',
+                title: 'js',
                 color: 'text-pink-500',
             },
         ]

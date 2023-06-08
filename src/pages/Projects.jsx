@@ -76,10 +76,11 @@ const Projects = () => {
               </div>
             </div>
 
-            <div className="mt-5 bg-gray-300 dark:bg-neutral-700 p-3 flex-grow rounded-2xl">
-              <h2 className="font-poppins font-bold text-titleLight dark:text-titleDark text-[24px]">{project.title}</h2>
-              <p className="text-neutral-600 dark:text-textDark text-[14px] font-open mt-2 text-justify">{project.description}</p>
-
+            <div className="mt-5 bg-gray-300 dark:bg-neutral-700 p-3 flex-grow rounded-2xl flex flex-col justify-between">
+              <div>
+                <h2 className="font-poppins font-bold text-titleLight dark:text-titleDark text-[24px]">{project.title}</h2>
+                <p className="text-neutral-600 dark:text-textDark text-[14px] font-open mt-2 text-justify">{project.description}</p>
+              </div>
               <div className="mt-4 flex flex-wrap gap-2"> 
                 {project.tags.map((tag, index) => (
                   <p key={index} className={`font-open text-[16px] font-semibold ${tag.color}`}>
