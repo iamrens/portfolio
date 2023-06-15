@@ -24,21 +24,21 @@ export const personalInfo = [
         title: 'Gender : ',
         description: 'Male'
     },
-    {
-        id: 5,
-        title: 'Civil Status : ',
-        description: 'Single'
-    },
+    // {
+    //     id: 5,
+    //     title: 'Civil Status : ',
+    //     description: 'Single'
+    // },
     {
         id: 6,
         title: 'Citizenship : ',
         description: 'Filipino'
     },
-    {
-        id: 7,
-        title: 'Religion : ',
-        description: 'Roman Catholic'
-    },
+    // {
+    //     id: 7,
+    //     title: 'Religion : ',
+    //     description: 'Roman Catholic'
+    // },
     {
         id: 8,
         title: 'Address : ',
@@ -146,6 +146,36 @@ export const skillDetails = [
         title: 'Framer',
         url: 'https://res.cloudinary.com/dinwkz2rq/image/upload/v1684478467/portfolio/framer_c2lwqk.webp',
         level: '80'
+    },
+    {
+        id: 16,
+        title: 'Git',
+        url: 'https://res.cloudinary.com/dinwkz2rq/image/upload/v1686792621/portfolio/Git_hvq6if.png',
+        level: '90'
+    },
+    {
+        id: 17,
+        title: 'Github',
+        url: 'https://res.cloudinary.com/dinwkz2rq/image/upload/v1686792621/portfolio/GitHub-Mark_y0iami.png',
+        level: '90'
+    },
+    {
+        id: 18,
+        title: 'jQuery',
+        url: 'https://res.cloudinary.com/dinwkz2rq/image/upload/v1686792621/portfolio/jQuery_pfw7cc.png',
+        level: '70'
+    },
+    {
+        id: 19,
+        title: 'Arduino',
+        url: 'https://res.cloudinary.com/dinwkz2rq/image/upload/v1686792926/portfolio/arduino_gsh1nf.png',
+        level: '70'
+    },
+    {
+        id: 20,
+        title: 'Autocad',
+        url: 'https://res.cloudinary.com/dinwkz2rq/image/upload/v1686792926/portfolio/autocad_n3cbqm.jpg',
+        level: '70'
     },
 ]
 

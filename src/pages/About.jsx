@@ -41,7 +41,7 @@ const About = () => {
   }, []);
 
   return (
-    <div className="h-[100%] mx-auto box-border px-2">
+    <div className="h-[100%] mx-auto box-border px-2 overflow-hidden">
       
       {/* Personal Info */}
       <Element name="personal">
@@ -111,7 +111,7 @@ const About = () => {
           initial="initial"
           whileInView="animate"
           viewport={{ once: true }}
-          className="grid grid-cols-4 gap-5 pt-7"
+          className="grid grid-cols-4 sm:grid-cols-5 gap-5 pt-7"
         >
           {skillDetails.map(({ title, url, level }, index) => (
             <motion.div 
@@ -148,7 +148,7 @@ const About = () => {
       {/* Navigation */}
       <div>
         {currentSection === 'personal' && (
-          <div className={isMobile ? `about-nav right-1 fixed bottom-1 ${hoverBgColor}` : `about-nav left-1/2 transform -translate-x-1/2 fixed bottom-1 ${hoverBgColor}`}>
+          <div className={isMobile ? `about-nav right-1 fixed bottom-2 ${hoverBgColor}` : `about-nav left-1/2 transform -translate-x-1/2 fixed bottom-1 ${hoverBgColor}`}>
             <Link to="skills" smooth={true} duration={500} spy={true}>
               { isMobile ? <FaArrowRight size={24} /> : <FaArrowDown size={24} />}
             </Link>
@@ -156,12 +156,12 @@ const About = () => {
         )}
         {currentSection === 'skills' && (
           <div className={isMobile ? '' : `fixed bottom-1 left-1/2 transform -translate-x-1/2 flex space-x-2`}>
-            <div className={isMobile ? `${hoverBgColor} fixed bottom-1 left-1 about-nav` : `about-nav ${hoverBgColor}`}>
+            <div className={isMobile ? `${hoverBgColor} fixed bottom-2 left-1 about-nav` : `about-nav ${hoverBgColor}`}>
               <Link to="personal" smooth={true} duration={500} spy={true}>
                 { isMobile ? <FaArrowLeft size={24} /> : <FaArrowUp size={24} />}
               </Link>
             </div>
-            <div style={{animationDelay: '0.5s'}} className={isMobile ? `${hoverBgColor} fixed bottom-1 right-1 about-nav` : `about-nav ${hoverBgColor}`}>
+            <div style={{animationDelay: '0.5s'}} className={isMobile ? `${hoverBgColor} fixed bottom-2 right-1 about-nav` : `about-nav ${hoverBgColor}`}>
               <Link to="education" smooth={true} duration={500} spy={true}>
               { isMobile ? <FaArrowRight size={24} /> : <FaArrowDown size={24} />}
               </Link>
@@ -169,7 +169,7 @@ const About = () => {
           </div>
         )}
         {currentSection === 'education' && (
-          <div className={isMobile ? `about-nav left-1 fixed bottom-1 ${hoverBgColor}` : `about-nav fixed bottom-1 left-1/2 transform -translate-x-1/2 ${hoverBgColor}`}>
+          <div className={isMobile ? `about-nav left-1 fixed bottom-2 ${hoverBgColor}` : `about-nav fixed bottom-1 left-1/2 transform -translate-x-1/2 ${hoverBgColor}`}>
             <Link to="skills" smooth={true} duration={500} spy={true}>
               { isMobile ? <FaArrowLeft size={24} /> : <FaArrowUp size={24} />}
             </Link>
