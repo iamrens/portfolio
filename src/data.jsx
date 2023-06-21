@@ -180,32 +180,32 @@ export const skillDetails = [
 ]
 
 export const experienceDetails = [
-    {
-        id: 1,
-        title: 'Elementary',
-        where: 'Bayto Elementary School - Zambales',
-        when: '2002 - 2008',
-        icon: <FaGraduationCap />,
-        description: [
-            {
-                id: 1,
-                title: 'Passed the elementary school as a Salutatorian.',
-            },
-        ]
-    },
-    {
-        id: 2,
-        title: 'Secondary',
-        where: 'Santa Cruz Academy - Zambales',
-        when: '2008 - 2012',
-        icon: <FaGraduationCap />,
-        description: [
-            {
-                id: 1,
-                title: 'Passed the secondary school as a 5th honor.',
-            },
-        ]
-    },
+    // {
+    //     id: 1,
+    //     title: 'Elementary',
+    //     where: 'Bayto Elementary School - Zambales',
+    //     when: '2002 - 2008',
+    //     icon: <FaGraduationCap />,
+    //     description: [
+    //         {
+    //             id: 1,
+    //             title: 'Passed the elementary school as a Salutatorian.',
+    //         },
+    //     ]
+    // },
+    // {
+    //     id: 2,
+    //     title: 'Secondary',
+    //     where: 'Santa Cruz Academy - Zambales',
+    //     when: '2008 - 2012',
+    //     icon: <FaGraduationCap />,
+    //     description: [
+    //         {
+    //             id: 1,
+    //             title: 'Passed the secondary school as a 5th honor.',
+    //         },
+    //     ]
+    // },
     {
         id: 3,
         title: 'Engineering Degree',
@@ -302,15 +302,16 @@ export const experienceDetails = [
             },
             {
                 id: 2,
-                title: 'Front-end: React JS, Next JS, TypeScript, Vite, Redux, Tailwind CSS, Material UI, Bootstrap, Framer Motion',
+                title: 'Front-end: React JS, Next JS, TypeScript, Vite, Redux, jQuery, Tailwind CSS, Material UI, Bootstrap, Framer Motion, Git, Github',
             },
             {
                 id: 3,
-                title: 'Back-end: Node JS, Express JS, MongoDB, Moongose, Firebase',
+                title: 'Back-end: Node JS, Express JS, MongoDB, Mongoose, Firebase, Rest API, JWT, NPM',
             },
             {
                 id: 4,
-                title: "Currently enrolled in one of Udemy courses titled 'The Complete 2023 Web Development Bootcamp' by Dr. Angela Yu.",
+                title: "Completed Udemy course titled 'The Complete 2023 Web Development Bootcamp' by Dr. Angela Yu",
+                link: "https://www.udemy.com/certificate/UC-7d8c5587-0eef-40d9-a1cb-b1a2056400c5/"
             },
         ]
     },
